@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-left">
+                <li><a href="#ABOUT">ABOUT</a></li>
+                <li><a href="#PROJECTS">PROJECTS</a></li>
+                <li><button class="contact-button" onclick="scrollToContact()">CONTACT</button></li>
+            </ul>
+            <button id="darkModeToggle">🌙</button>
+        </nav>
+    </header>
+
+    <section id="ABOUT">
+        <img id="aboutImage" src="images/about-me.jpg" alt="About Me" class="full-image">
+    </section>
+
+    <section id="PROJECTS">
+        <img id="projectImage" src="images/projects-light.jpg" alt="Projects" class="full-image">
+    </section>
+
+    <section id="CONTACT">
+        <img id="contactImage" src="images/contact-light.jpg" alt="Contact" class="full-image">
+    </section>
+
+    <button id="backToTop" onclick="scrollToTop()">↑</button>
+    <section id="FORM">
+        <div class="form-container">
+            <h2>Enter Your Info</h2>
+
+            <form id="contactForm">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <p>© 2024 | <span id="clock"></span></p>
+    </footer>
+</body>
+</html>
