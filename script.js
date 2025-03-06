@@ -8,13 +8,13 @@ document.getElementById("darkModeToggle").addEventListener("click", () => {
     const contactImage = document.getElementById("contactImage");
 
     if (document.body.classList.contains("dark-mode")) {
-        aboutImage.src = "images/about-me-dark.jpg"; // Dark mode image for About
-        projectImage.src = "images/projects-dark.jpg"; // Dark mode image for Projects
-        contactImage.src = "images/contact-dark.jpg"; // Dark mode image for Contact
+        aboutImage.src = "about-me-dark.jpg"; // Dark mode image for About
+        projectImage.src = "projects-dark.jpg"; // Dark mode image for Projects
+        contactImage.src = "contact-dark.jpg"; // Dark mode image for Contact
     } else {
-        aboutImage.src = "images/about-me.jpg"; // Light mode image for About
-        projectImage.src = "images/projects-light.jpg"; // Light mode image for Projects
-        contactImage.src = "images/contact-light.jpg"; // Light mode image for Contact
+        aboutImage.src = "about-me.jpg"; // Light mode image for About
+        projectImage.src = "projects-light.jpg"; // Light mode image for Projects
+        contactImage.src = "contact-light.jpg"; // Light mode image for Contact
     }
 });
 
